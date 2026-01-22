@@ -3,6 +3,8 @@ import React from "react";
 import { Box, Container } from "@mui/material";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
+import SideBar2 from "./SideBar2";
+import Header2 from "./Header2";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -11,9 +13,9 @@ interface DashboardLayoutProps {
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   return (
     <Box sx={{ display: "flex", minHeight: "100vh" }}>
-      <Sidebar />
+      <SideBar2 />
       <Box sx={{ flex: 1, display: "flex", flexDirection: "column" }}>
-        <Header />
+        <Header2 />
         <Box
           component="main"
           sx={{ flex: 1, p: 3, backgroundColor: "#f5f5f5" }}
